@@ -1,4 +1,4 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -6,7 +6,12 @@
     scroll-behavior: smooth;
 }
 
-nav{
+body {
+    background-color: whitesmoke;
+}
+
+/* Nav Bar Design */
+nav {
     display: flex;
     align-items: baseline;
     background-color: #232528;
@@ -14,7 +19,7 @@ nav{
     text-align: center;
     position: relative;
 }
-    nav ul{
+    nav ul {
         right: 0;
         margin-block-start: 1rem;
         width: 100%;
@@ -22,7 +27,7 @@ nav{
         margin-inline: 1rem;
 
     }
-        nav ul li{
+        nav ul li {
             display: inline-block;
             font-size: 1.2rem;
             list-style: none;
@@ -33,3 +38,97 @@ nav{
         nav ul li:hover{
             color: silver;
         }
+/* End */
+
+/* Content Design */
+main {
+    outline: 1px solid red;
+    overflow: hidden;
+    margin-block-start: 3rem;
+    position: relative;
+}
+    main section:nth-child(1) {
+        margin: 1rem;
+        padding-inline: 0.5rem;
+        padding-block: 1rem;
+        width: 70%;
+        margin: 0 auto;
+    }
+        main section:nth-child(1) p, main section:nth-child(1) h2{
+            margin-block: 0.5rem;
+            margin-inline-start: 5rem;
+            padding-inline: 2rem;
+        }
+        main section:nth-child(1) h2 {
+            font-size: 10rem;
+            font-family: "EXO 2";
+            font-weight: bolder;
+            width: 0%;
+            overflow: hidden;
+            text-wrap: nowrap;
+            position: relative;
+            border-right: 1px solid black;
+            letter-spacing: .10em;
+            position: absolute;
+            left: 10rem;
+            top: 0;
+            display: inline-block;
+            /* animation: typeWriter 3s steps(40, end),cursor-blink 0.75s step-end infinite; */
+        }
+        @keyframes typeWriter {
+            from {width: 0%;}
+            to {width: 100%;}
+        }
+        @keyframes cursor-blink {
+            from {border-color: #232528;}
+            to {border-color: transparent;}
+        }
+        main section:nth-child(1) p {
+            margin-block-start: 14rem;
+            font-size: 1.3rem;
+        }
+    main section:nth-child(2){
+        outline: 1px solid blue;
+        margin-block-start: 4rem;
+        padding: 1rem;
+        background-color: #232528;
+        color: whitesmoke;
+    }
+        main section:nth-child(2) article{
+            outline: 1px solid white;
+            width: 80%;
+            margin: 3rem auto;
+            height: 30rem;
+        }
+            main section:nth-child(2) article figure{
+                overflow: hidden;
+                display: flex;
+                width: 100%;
+                height: inherit;
+            }
+            main section:nth-child(2) article figure img{
+                width: 40rem;
+                object-fit: cover;
+                height: inherit;
+                border-radius: 5px;
+            }
+            main section:nth-child(2) article:nth-child(1) figure{
+                outline: 1px solid green;
+                width: 100%;
+                flex-direction: row-reverse;
+            }
+            main section:nth-child(2) article:nth-child(3) figure{
+                outline: 1px solid green;
+                width: 100%;
+                flex-direction: row-reverse;
+            }
+                main section:nth-child(2) article figure figcaption{
+                    text-align: center;
+                    width: 50%;
+                    margin: 0 auto;
+                }
+                    main section:nth-child(2) article figure figcaption p{
+                        margin-block-start:1rem;
+                        font-size: 1.3rem;
+                    }
+/* End */ 
