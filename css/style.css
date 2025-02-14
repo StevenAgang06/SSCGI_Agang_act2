@@ -15,7 +15,6 @@ nav {
     display: flex;
     align-items: baseline;
     background-color: #232528;
-    color: whitesmoke;
     text-align: center;
     position: relative;
 }
@@ -37,6 +36,10 @@ nav {
         }
         nav ul li:hover{
             color: silver;
+        }
+        nav ul li a{
+            text-decoration: none;
+            color: whitesmoke;
         }
 /* End */
 
