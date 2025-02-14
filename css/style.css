@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    scroll-behavior: smooth;
+}
+
+nav{
+    display: flex;
+    align-items: baseline;
+    background-color: #232528;
+    color: whitesmoke;
+    text-align: center;
+    position: relative;
+}
+    nav ul{
+        right: 0;
+        margin-block-start: 1rem;
+        width: 100%;
+        padding: 0.3rem;
+        margin-inline: 1rem;
+
+    }
+        nav ul li{
+            display: inline-block;
+            font-size: 1.2rem;
+            list-style: none;
+            margin-inline: 1rem;
+            cursor: pointer;
+            padding-inline: 0.5rem;
+        }
+        nav ul li:hover{
+            color: silver;
+        }
