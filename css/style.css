@@ -42,7 +42,6 @@ nav {
 
 /* Content Design */
 main {
-    outline: 1px solid red;
     overflow: hidden;
     margin-block-start: 3rem;
     position: relative;
@@ -157,8 +156,16 @@ main {
                             background-color: #232528;
                             color: whitesmoke;
                         }
-                            main section:nth-child(2) article figure figcaption aside a img {
+                            main section:nth-child(2) article figure figcaption a img {
                                 width: 30px;
                                 object-fit: contain;
                             }   
+                    main section:nth-child(2) article figure figcaption section{
+                        margin-block-start: 8rem;
+                    }
+                        main section:nth-child(2) article figure figcaption section img{
+                            width: 3.5rem;
+                            height: auto;
+                        }
 /* End */ 
+
